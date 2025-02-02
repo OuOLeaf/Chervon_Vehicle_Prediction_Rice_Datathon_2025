@@ -99,7 +99,7 @@ st.title("Feature Engineering")
 st.markdown("""
 ### Vehicle Age 
 
-- **Included Date and Model Year in our model as numeric columns**
+- **Included Date and Model Year in our model**
 - **Defined Vehicle Age as Date minus Model Year.**
 - **Greatly enhanced the model's performance.**
 """)
