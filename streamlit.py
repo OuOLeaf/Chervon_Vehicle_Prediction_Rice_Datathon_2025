@@ -7,7 +7,7 @@ import seaborn as sns
 
 st.title("Chervon: Vehicle Population Prediction")
 
-#st.image("cover.png", use_container_width=True)
+st.image("cover.png", use_container_width=True)
 
 data = {
     "Column": [
