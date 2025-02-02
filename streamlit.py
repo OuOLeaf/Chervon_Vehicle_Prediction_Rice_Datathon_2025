@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.title("Chervon: Vehicle Population Prediction")
+st.title("Refuel, Today?")
 
 st.image("cover.png", use_container_width=True)
 
