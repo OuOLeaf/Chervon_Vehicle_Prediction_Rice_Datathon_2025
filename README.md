@@ -11,3 +11,5 @@
 - **requirements.txt**: Lists the required Python packages for the dashboard.
 - **streamlit.py**: The main Streamlit program to run the dashboard.
 
+### Hand-in Prediction
+- **Submission Format** : Our prediction
