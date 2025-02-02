@@ -71,7 +71,7 @@ st.table(df)
 
 
 st.markdown("---")
-st.subheader("Feature Engineering")
+st.title("Feature Engineering")
 st.markdown("""
 ### Vehicle Age in the Model
 
