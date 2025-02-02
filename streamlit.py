@@ -119,3 +119,4 @@ st.subheader("Model Performance & Interpretation")
 st.subheader("XGBoost Model : RMSE = 6043.28")
 st.image("Feature_imp.png", width = 700)
 
+st.image("feature_imp.png", width = 700)
