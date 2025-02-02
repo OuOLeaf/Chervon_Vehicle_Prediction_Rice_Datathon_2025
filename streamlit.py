@@ -34,29 +34,41 @@ st.markdown("---")
 st.title("Column Information")
 st.table(df)  # Use st.dataframe(df) if you want interactivity
 data = {
-    "Variable": [
-        "Electric Mile Range",
-        "GVWR Class",
-        "Model Year",
-        "Fuel Type",
-        "Number of Vehicles Registered at the Same Address",
+    "Column": [
         "Date",
         "Vehicle Category",
+        "GVWR Class",
+        "Fuel Type",
+        "Model Year",
         "Fuel Technology",
+        "Electric Mile Range",
+        "Number of Vehicles Registered at the Same Address",
         "Region",
         "Vehicle Population",
     ],
-    "Missing Percentage (%)": [
-        97.413100,
-        55.937447,
-        1.468833,
-        0.209485,
-        0.080384,
-        0.000000,
-        0.000000,
-        0.000000,
-        0.000000,
-        0.000000,
+    "Non-Null Count": [
+        "41053 non-null",
+        "41053 non-null",
+        "41053 non-null",
+        "41053 non-null",
+        "40450 non-null",
+        "41053 non-null",
+        "41053 non-null",
+        "41053 non-null",
+        "41053 non-null",
+        "41053 non-null",
+    ],
+    "Dtype": [
+        "int64",
+        "object",
+        "object",
+        "object",
+        "float64",
+        "object",
+        "object",
+        "object",
+        "object",
+        "int64",
     ],
 }
 
@@ -73,7 +85,7 @@ st.table(df)
 st.markdown("---")
 st.title("Feature Engineering")
 st.markdown("""
-### Vehicle Age in the Model
+### Vehicle Age 
 
 - **Initially, we included Date and Model Year in our model as numeric columns, but the model's performance did not improve significantly.**
 - **Defined Vehicle Age as Date minus Model Year.**
@@ -117,4 +129,13 @@ st.table(df)  #
 st.markdown("---")
 st.subheader("Model Performance & Interpretation")
 st.subheader("XGBoost Model : RMSE = 6043.28")
+st.subheader("Most Important Features: Vehicle Category, Fuel Type")
 st.image("feature_imp.png", width = 700)
+
+st.markdown("---")
+col1, col2= st.columns(2)  # Three equal-width columns
+
+with col1:
+    st.write("On average, the model's predictions deviate by 6000 from the actual values, 2% deviation within the original variable's range of 1 to 300,000.")
+with col2:
+    st.write("New Varialbe (Vehicle Age) helps enhance model performance, while Vehicle Category plays most significant role in prediction.")
