@@ -99,9 +99,8 @@ st.title("Feature Engineering")
 st.markdown("""
 ### Vehicle Age 
 
-- **Initially, we included Date and Model Year in our model as numeric columns, but the model's performance did not improve significantly.**
+- **Included Date and Model Year in our model as numeric columns**
 - **Defined Vehicle Age as Date minus Model Year.**
-- **For rows where Model Year is missing, we fill the missing value with the median in train data.**
 - **Greatly enhanced the model's performance.**
 """)
 st.image("picture/Vehicle_Age.png", width = 600)
@@ -154,6 +153,6 @@ st.markdown("""
 1. **On average, the model's predictions deviate by 6000 from the actual values, 2% deviation within the original variable's range of 1 to 300,000.**
 """)
 st.markdown("""
-2. **New Varialbe (Vehicle Age) helps enhance model performance, while Vehicle Category plays most significant role in prediction.**
+2. **New Variable (Vehicle Age) helps enhance model performance, while Vehicle Category plays most significant role in prediction.**
 """)
 st.image("picture/vehicle_category.png", width = 600)
