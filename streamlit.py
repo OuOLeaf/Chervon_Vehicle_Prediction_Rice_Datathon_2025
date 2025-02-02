@@ -7,7 +7,7 @@ import seaborn as sns
 
 st.title("Refuel, Today?")
 
-st.image("cover.png", use_container_width=True)
+st.image("picture/cover.png", use_container_width=True)
 
 data = {
     "Column": [
@@ -104,7 +104,7 @@ st.markdown("""
 - **For rows where Model Year is missing, we fill the missing value with the median in train data.**
 - **Greatly enhanced the model's performance.**
 """)
-st.image("Vehicle_Age.png", width = 600)
+st.image("picture/Vehicle_Age.png", width = 600)
 
 # Data for the table
 data = {
@@ -146,7 +146,7 @@ st.markdown("""
 - **Most Important Features: Vehicle Category, Fuel Type**
 """)
 
-st.image("feature_imp.png", width = 600)
+st.image("picture/feature_imp.png", width = 600)
 
 st.markdown("---")
 st.subheader("Conclusion")
@@ -156,4 +156,4 @@ st.markdown("""
 st.markdown("""
 2. **New Varialbe (Vehicle Age) helps enhance model performance, while Vehicle Category plays most significant role in prediction.**
 """)
-st.image("vehicle_category.png", width = 600)
+st.image("picture/vehicle_category.png", width = 600)
